@@ -7,3 +7,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    ignore:
+      # we cannot update to v4 until Shadcn/Next do
+      - dependency-name: "tailwindcss"
+        versions: ["4.x"]
