@@ -1,0 +1,14 @@
+name: General Issue
+description: Report an issue or share an idea for improvement.
+title: "[ISSUE] "
+labels: ["enhancement", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: "## What's your issue about?\nProvide a clear and concise description of your issue."
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context"
+      description: "Add any other context about the problem or idea here."
+      placeholder: "Describe details like related features, problems, or potential solutions."

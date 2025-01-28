@@ -1,0 +1,36 @@
+name: User Story
+description: Suggest a feature or improvement using the user story format.
+title: "[USER STORY] "
+labels: ["enhancement", "user story"]
+body:
+  - type: markdown
+    attributes:
+      value: "## User Story\nAs a [role], I want to [goal], so that [reason]."
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Define the conditions that this user story must meet to be considered complete."
+      placeholder: "- [ ] Criteria 1\n- [ ] Criteria 2\n- [ ] Criteria 3"
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional Context"
+      description: "Add any additional details, mockups, or references that are relevant to the story."
+      placeholder: "Provide context, designs, links to documentation, etc."
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How important is this feature?"
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Dependencies"
+      description: "List any dependent features or tasks for this user story."
+      placeholder: "e.g., Needs API endpoint X, Relies on feature Y"
